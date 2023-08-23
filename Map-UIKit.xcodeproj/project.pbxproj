@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		188FAFA12A9638A500362850 /* ViewController+Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188FAFA02A9638A500362850 /* ViewController+Map.swift */; };
 		189313172A948EEA00869760 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189313162A948EEA00869760 /* AppDelegate.swift */; };
 		189313192A948EEA00869760 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189313182A948EEA00869760 /* SceneDelegate.swift */; };
 		1893131B2A948EEA00869760 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1893131A2A948EEA00869760 /* ViewController.swift */; };
@@ -15,15 +16,15 @@
 		189313232A948EEC00869760 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189313212A948EEC00869760 /* LaunchScreen.storyboard */; };
 		1893132E2A9499B800869760 /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1893132D2A9499B800869760 /* CustomAnnotation.swift */; };
 		189313322A949A3D00869760 /* CustomAnnotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 189313312A949A3D00869760 /* CustomAnnotationView.xib */; };
-		189313382A949D1B00869760 /* RoundedCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189313372A949D1B00869760 /* RoundedCornerView.swift */; };
+		189313382A949D1B00869760 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189313372A949D1B00869760 /* CircleImageView.swift */; };
 		1893133E2A94A3B200869760 /* CustomClusterAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1893133D2A94A3B200869760 /* CustomClusterAnnotationView.swift */; };
 		189313402A94A3B800869760 /* CustomClusterAnnotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1893133F2A94A3B800869760 /* CustomClusterAnnotationView.xib */; };
 		189313422A94A3C400869760 /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189313412A94A3C400869760 /* CustomAnnotationView.swift */; };
-		189313442A94DDFC00869760 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189313432A94DDFC00869760 /* LocationManager.swift */; };
 		189313472A94DE3500869760 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189313462A94DE3500869760 /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		188FAFA02A9638A500362850 /* ViewController+Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Map.swift"; sourceTree = "<group>"; };
 		189313132A948EEA00869760 /* Map-UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Map-UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		189313162A948EEA00869760 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		189313182A948EEA00869760 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,11 +35,10 @@
 		189313242A948EEC00869760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1893132D2A9499B800869760 /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
 		189313312A949A3D00869760 /* CustomAnnotationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAnnotationView.xib; sourceTree = "<group>"; };
-		189313372A949D1B00869760 /* RoundedCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerView.swift; sourceTree = "<group>"; };
+		189313372A949D1B00869760 /* CircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
 		1893133D2A94A3B200869760 /* CustomClusterAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomClusterAnnotationView.swift; sourceTree = "<group>"; };
 		1893133F2A94A3B800869760 /* CustomClusterAnnotationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomClusterAnnotationView.xib; sourceTree = "<group>"; };
 		189313412A94A3C400869760 /* CustomAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotationView.swift; sourceTree = "<group>"; };
-		189313432A94DDFC00869760 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		189313462A94DE3500869760 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +75,7 @@
 				189313162A948EEA00869760 /* AppDelegate.swift */,
 				189313182A948EEA00869760 /* SceneDelegate.swift */,
 				1893131A2A948EEA00869760 /* ViewController.swift */,
+				188FAFA02A9638A500362850 /* ViewController+Map.swift */,
 				189313452A94DE2500869760 /* Utils */,
 				189313332A949A4700869760 /* AnnotationViews */,
 				1893132A2A948F2B00869760 /* Annotations */,
@@ -133,7 +134,7 @@
 		189313362A949D0E00869760 /* IBDesignables */ = {
 			isa = PBXGroup;
 			children = (
-				189313372A949D1B00869760 /* RoundedCornerView.swift */,
+				189313372A949D1B00869760 /* CircleImageView.swift */,
 			);
 			path = IBDesignables;
 			sourceTree = "<group>";
@@ -141,7 +142,6 @@
 		189313452A94DE2500869760 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				189313432A94DDFC00869760 /* LocationManager.swift */,
 				189313462A94DE3500869760 /* UIView+Extensions.swift */,
 			);
 			path = Utils;
@@ -220,12 +220,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				189313382A949D1B00869760 /* RoundedCornerView.swift in Sources */,
+				189313382A949D1B00869760 /* CircleImageView.swift in Sources */,
 				1893131B2A948EEA00869760 /* ViewController.swift in Sources */,
 				189313172A948EEA00869760 /* AppDelegate.swift in Sources */,
 				189313472A94DE3500869760 /* UIView+Extensions.swift in Sources */,
 				189313192A948EEA00869760 /* SceneDelegate.swift in Sources */,
-				189313442A94DDFC00869760 /* LocationManager.swift in Sources */,
+				188FAFA12A9638A500362850 /* ViewController+Map.swift in Sources */,
 				1893132E2A9499B800869760 /* CustomAnnotation.swift in Sources */,
 				189313422A94A3C400869760 /* CustomAnnotationView.swift in Sources */,
 				1893133E2A94A3B200869760 /* CustomClusterAnnotationView.swift in Sources */,

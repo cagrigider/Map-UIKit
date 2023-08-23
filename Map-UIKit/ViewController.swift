@@ -14,12 +14,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        LocationManager.shared.checkAndRequestLocationPermission()
         setupMapView()
         addExamplePoints()
     }
 
-    func setupMapView() {
+    private func setupMapView() {
         mapView.delegate = self
         mapView.showsUserLocation = false
 
@@ -36,7 +35,7 @@ class ViewController: UIViewController {
         mapView.setRegion(region, animated: false)
     }
 
-    func addExamplePoints() {
+    private func addExamplePoints() {
         /// Removing existing annotations before adding new ones
         let oldAnnotations = self.mapView.annotations
         mapView.removeAnnotations(oldAnnotations)
@@ -46,7 +45,7 @@ class ViewController: UIViewController {
         mapView.addAnnotations(points)
     }
 
-    func generateExamplePoints(_ pointsCount: Int) -> [CustomAnnotation] {
+    private func generateExamplePoints(_ pointsCount: Int) -> [CustomAnnotation] {
         var points: [CustomAnnotation] = []
 
         /// Generating sample points based on the given count
@@ -58,30 +57,5 @@ class ViewController: UIViewController {
         }
 
         return points
-    }
-
-    @IBAction private func refreshMap() {
-        addExamplePoints()
-    }
-}
-
-extension ViewController: MKMapViewDelegate {
-    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        if annotation is MKUserLocation {
-            return nil
-        }
-
-        if annotation is CustomAnnotation {
-            guard let annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier) as? CustomAnnotationView else {
-                return CustomAnnotationView(annotation: annotation, reuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
-            }
-            annotationView.annotation = annotation
-            annotationView.clusteringIdentifier  = MKMapViewDefaultClusterAnnotationViewReuseIdentifier
-            return annotationView
-        } else if annotation is MKClusterAnnotation {
-            return CustomClusterAnnotationView(annotation: annotation, reuseIdentifier: MKMapViewDefaultClusterAnnotationViewReuseIdentifier)
-        } else {
-            return MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
-        }
     }
 }

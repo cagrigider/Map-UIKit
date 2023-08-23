@@ -21,29 +21,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <standardMapConfiguration key="preferredConfiguration"/>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVh-Gt-B0V">
-                                <rect key="frame" x="337" y="59" width="40" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="06N-UY-5RU"/>
-                                    <constraint firstAttribute="width" secondItem="BVh-Gt-B0V" secondAttribute="height" multiplier="1:1" id="Mf8-m0-BVo"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" image="arrow.clockwise" catalog="system"/>
-                                <connections>
-                                    <action selector="refreshMap" destination="BYZ-38-t0r" eventType="touchUpInside" id="gUW-Lu-bkI"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="4BS-jT-FZw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5sK-Qh-ri9"/>
                             <constraint firstItem="4BS-jT-FZw" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="IWH-Me-bwU"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BVh-Gt-B0V" secondAttribute="trailing" constant="16" id="e3S-4d-DSq"/>
                             <constraint firstItem="4BS-jT-FZw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="v2e-87-ZAs"/>
                             <constraint firstItem="4BS-jT-FZw" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="zH7-PM-K2L"/>
-                            <constraint firstItem="BVh-Gt-B0V" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zS2-6n-bON"/>
                         </constraints>
                     </view>
                     <connections>
@@ -56,7 +41,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="arrow.clockwise" catalog="system" width="113" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
